@@ -1,0 +1,331 @@
+:root {
+    --bg-color: #0f172a;
+    /* slate-900 */
+    --card-bg: #1e293b;
+    /* slate-800 */
+    --border-color: #334155;
+    /* slate-700 */
+    --text-primary: #f1f5f9;
+    /* slate-100 */
+    --text-secondary: #94a3b8;
+    /* slate-400 */
+    --accent-color: #22d3ee;
+    /* cyan-400 */
+    --accent-hover: #06b6d4;
+    /* cyan-500 */
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  /* Espaço para a nav fixa */
+    }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: "Inter", sans-serif;
+    line-height: 1.7;
+    }
+
+.layout-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    }
+
+.course-nav {
+    width: 220px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1rem;
+    position: sticky;
+    top: 1rem;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+.course-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    }
+
+.course-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    }
+
+.course-nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    }
+
+.course-container {
+    flex: 1;
+    }
+
+.course-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    }
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    }
+
+.btn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    }
+
+.slide {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    }
+
+.slide-header {
+    background-color: #27364d;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+
+.slide-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    }
+
+.slide-icon {
+    color: var(--accent-color);
+    }
+
+.slide-content {
+    padding: 2rem;
+    }
+
+.slide-content h3 {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    }
+
+.slide-content p,
+    .slide-content li {
+    color: var(--text-secondary);
+    }
+
+.slide-content ul {
+    list-style-position: inside;
+    padding-left: 0.5rem;
+    }
+
+.slide-content li + li {
+    margin-top: 0.5rem;
+    }
+
+    /* Evaluation Section */
+#avaliacao .slide-content {
+    padding: 2rem;
+    }
+
+.quiz-question {
+    margin-bottom: 1.5rem;
+    }
+
+.quiz-question p {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    }
+
+.quiz-options label {
+    display: block;
+    background-color: #27364d;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+    }
+
+.quiz-options label:hover {
+    background-color: #334155;
+    }
+
+.quiz-options input[type="radio"] {
+    display: none;
+    }
+
+    /* Feedback styles */
+.quiz-options label.correct {
+    background-color: rgba(34, 197, 94, 0.2);
+    border-color: #22c55e;
+    color: var(--text-primary);
+    }
+
+.quiz-options label.incorrect {
+    background-color: rgba(239, 68, 68, 0.2);
+    border-color: #ef4444;
+    color: var(--text-primary);
+    }
+
+#quiz-results {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: none;
+    /* Hidden by default */
+    transition: all 0.3s ease;
+    }
+
+.course-footer {
+    text-align: center;
+    margin-top: 4rem;
+    }
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    }
+
+.btn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    }
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    }
+
+.social-links a {
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+    }
+
+.social-links a:hover {
+    color: var(--accent-color);
+    }
+
+.social-links svg {
+    width: 28px;
+    height: 28px;
+    }
+
+    /* Responsive adjustments */
+@media (max-width: 768px) {
+    .layout-wrapper {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+.course-nav {
+        width: 100%;
+        position: static;
+        margin-bottom: 2rem;
+    }
+
+.course-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+.course-nav a {
+        padding: 0.5rem 0.75rem;
+    }
+
+.course-header h1 {
+        font-size: 1.8rem;
+    }
+
+.slide-header h2 {
+        font-size: 1.3rem;
+    }
+
+.slide-content {
+        padding: 1.5rem;
+    }
+    }
+
+@media (max-width: 480px) {
+    .layout-wrapper {
+        padding: 0.5rem;
+    }
+
+.course-nav ul {
+        gap: 0.5rem;
+    }
+
+.course-nav a {
+        font-size: 0.9rem;
+    }
+
+.course-header h1 {
+        font-size: 1.5rem;
+    }
+
+.slide-header {
+        padding: 1rem 1.5rem;
+    }
+
+.slide-header h2 {
+        font-size: 1.1rem;
+    }
+
+.slide-content {
+        padding: 1rem;
+    }
+
+.quiz-options label {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    }
