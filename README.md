@@ -45,7 +45,7 @@ Além dos nossos serviços de consultoria, o site oferece ferramentas e conteúd
 
 Você pode visitar o site do Dr. Yamaha diretamente através do GitHub Pages:
 
-*  [Link do seu GitHub Pages aqui](https://rivrsantos.github.io/Dr.Yamaha/)
+*  [Link GitHub Pages aqui](https://rivrsantos.github.io/Dr.Yamaha/)
 
 ---
 
@@ -75,4 +75,4 @@ Você também pode nos seguir nas redes sociais para mais dicas e novidades:
 
 ---
 
-Dr. Yamaha © 2024 - Todos os direitos reservados.
+Dr. Yamaha © 2025 - Todos os direitos reservados.
