@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Custo de Moto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+
+<body>
+
+    <h1>Calculadora de Custo de Moto</h1>
+    <div class="container">
+        <label for="consumo">Consumo médio (km/l):</label>
+        <input type="number" id="consumo" step="0.1" placeholder="Ex: 30">
+
+        <label for="distancia">Distância mensal (km):</label>
+        <input type="number" id="distancia" placeholder="Ex: 1000">
+
+        <label for="preco">Preço do combustível (R$/litro):</label>
+        <input type="number" id="preco" step="0.01" placeholder="Ex: 5.50">
+
+        <label for="revisao">Custo médio de revisão anual (R$):</label>
+        <input type="number" id="revisao" placeholder="Ex: 600">
+
+        <label for="imposto">Custo de impostos anuais (R$):</label>
+        <input type="number" id="imposto" placeholder="Ex: 450">
+
+        <label for="anos">Tempo de posse (anos):</label>
+        <input type="number" id="anos" placeholder="Ex: 3">
+
+        <button onclick="calcular()">Calcular Custo Total</button>
+        <button onclick="window.location.href = 'index.html'" class="button">Voltar</button>
+
+        <div class="result" id="resultado" style="display:none;">
+            <h2>Resultado</h2>
+            <p id="combustivel"></p>
+            <p id="revisoes"></p>
+            <p id="impostos"></p>
+            <p id="total"></p>
+        </div>
+    </div>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
