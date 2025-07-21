@@ -56,4 +56,25 @@ optionsContainer.querySelectorAll("label").forEach((label) => {
     resultsDiv.style.backgroundColor = "rgba(239, 68, 68, 0.2)";
       resultsDiv.style.color = "#ef4444"; // Vermelho
     }
+document.getElementById('quiz-audio').play().catch(function(e) {
+console.log("Autoplay bloqueado: ", e);
+});
+});
+
+    document.getElementById('start-quiz-btn').addEventListener('click', function () {
+            // Mostrar avaliação
+        document.getElementById('avaliacao').style.display = 'block';
+
+            // Ocultar o botão após mostrar a avaliação
+        this.style.display = 'none';
+
+            // Tocar música
+        const audio = document.getElementById('quiz-audio');
+        audio.play().catch(err => {
+            console.warn("Navegador bloqueou autoplay:", err);
+        });
+
+            // Scroll suave até a avaliação
+        document.getElementById('avaliacao').scrollIntoView({ behavior: 'smooth' });
+    });
 });
