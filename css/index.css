@@ -495,7 +495,7 @@ body {
     flex-shrink: 0;
     height: 200px;
     object-fit: cover;
-    border-right: 8px solid var(--bg-color);
+    border-right: 4px solid var(--bg-color);
 }
 
 /* .carousel-img {
