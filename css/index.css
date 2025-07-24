@@ -499,14 +499,14 @@ body {
 }
  */
 .carousel-img {
-    width: auto;
-    height: auto;
-    max-height: 200px;
+    width: 400px;
+    height: 200px;
+    max-height: 250px;
     flex-shrink: 0;
     object-fit: contain;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #000; /* opcional: destaca imagem menor
-    border-right: 8px solid var(--bg-color); */
+    border-right: 2px solid var(--bg-color); 
     margin-right: 1rem;
 }
 
