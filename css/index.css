@@ -486,7 +486,7 @@ body {
 
 .carousel-track {
     display: flex;
-    animation: scroll-carousel 30s linear infinite;
+    animation: scroll-carousel 20s linear infinite;
     width: calc(300px * 12);
 }
 
