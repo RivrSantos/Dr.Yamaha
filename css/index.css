@@ -481,7 +481,7 @@ body {
     position: relative;
     margin-bottom: 3rem;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 1 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-track {
@@ -499,7 +499,7 @@ body {
 }
  */
 .carousel-img {
-    width: 300px;
+    width: auto;
     height: auto;
     max-height: 200px;
     flex-shrink: 0;
@@ -507,7 +507,7 @@ body {
     padding: 1rem;
     background-color: #000; /* opcional: destaca imagem menor
     border-right: 8px solid var(--bg-color); */
-/*     margin-right: 1rem; */
+    margin-right: 1rem;
 }
 
 @keyframes scroll-carousel {
