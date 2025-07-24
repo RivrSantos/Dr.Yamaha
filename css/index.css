@@ -476,3 +476,57 @@ body {
     padding: 1rem;
   }
 }
+.carousel {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll-carousel 20s linear infinite;
+    width: calc(300px * 12);
+}
+
+.carousel-img {
+    width: 300px;
+    flex-shrink: 0;
+    height: 200px;
+    object-fit: cover;
+    border-right: 4px solid var(--bg-color);
+}
+
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#faq {
+    padding: 4rem 0;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
