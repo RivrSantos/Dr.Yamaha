@@ -486,19 +486,19 @@ body {
 
 .carousel-track {
     display: flex;
-    animation: scroll-carousel 40s linear infinite;
+    animation: scroll-carousel 30s linear infinite;
     width: calc(300px * 12);
 }
 
-/* .carousel-img {
+.carousel-img {
     width: 300px;
     flex-shrink: 0;
     height: 200px;
     object-fit: cover;
-    border-right: 4px solid var(--bg-color);
-} */
+    border-right: 8px solid var(--bg-color);
+}
 
-.carousel-img {
+/* .carousel-img {
     width: 250px;
     height: auto;
     max-height: 180px;
@@ -506,9 +506,9 @@ body {
     object-fit: contain;
     padding: 0.5rem;
     background-color: #000; /* opcional: destaca imagem menor */
-    border-right: 8px solid var(--bg-color);
-    margin-right: 1rem;
-}
+/*     border-right: 8px solid var(--bg-color); */
+/*     margin-right: 1rem; */
+}  */
 
 @keyframes scroll-carousel {
     0% {
