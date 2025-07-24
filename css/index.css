@@ -486,7 +486,7 @@ body {
 
 .carousel-track {
     display: flex;
-    animation: scroll-carousel 20s linear infinite;
+    animation: scroll-carousel 40s linear infinite;
     width: calc(300px * 12);
 }
 
@@ -506,7 +506,8 @@ body {
     object-fit: contain;
     padding: 0.5rem;
     background-color: #000; /* opcional: destaca imagem menor */
-    border-right: 2px solid var(--bg-color);
+    border-right: 8px solid var(--bg-color);
+    margin-right: 1rem;
 }
 
 @keyframes scroll-carousel {
