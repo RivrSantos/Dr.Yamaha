@@ -490,25 +490,13 @@ body {
     width: calc(300px * 12);
 }
 
-/* .carousel-img {
+.carousel-img {
     width: 300px;
     flex-shrink: 0;
     height: 200px;
     object-fit: cover;
     border-right: 4px solid var(--bg-color);
-}
- */
-.carousel-img {
-    width: 400px;
-    height: 200px;
-    max-height: 250px;
-    flex-shrink: 0;
-    object-fit: contain;
-    padding: 0.5rem;
-    background-color: #000; /* opcional: destaca imagem menor
-    border-right: 2px solid var(--bg-color); 
-    margin-right: 1rem;
-}
+} 
 
 @keyframes scroll-carousel {
     0% {
