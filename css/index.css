@@ -414,6 +414,7 @@ body {
     left: 0;
     width: 100%;
     background-color: var(--card-bg);
+    background-color: black;
     border-top: 1px solid var(--border-color);
     padding: 1rem 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
