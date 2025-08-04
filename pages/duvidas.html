@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Central de Dúvidas | Dr. Yamaha</title>
+    <link rel="stylesheet" href="../css/duvidas.css"/>
+
+
+</head>
+
+<body>
+
+    <h1>Central de Dúvidas - Dr. Yamaha</h1>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">Quando devo trocar o óleo da minha moto Yamaha?</button>
+            <div class="faq-answer">Recomenda-se trocar o óleo entre 1.000 km e 3.000 km, dependendo do modelo e tipo de
+                uso. Sempre confira o manual.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Posso usar óleo de carro na minha moto?</button>
+            <div class="faq-answer">Não. Óleos de carro têm aditivos que prejudicam o sistema de embreagem das motos.
+                Use sempre óleo específico.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Como saber se a corrente da moto está com a tensão correta?</button>
+            <div class="faq-answer">A folga ideal é de 2 a 3 cm. Verifique com a moto no descanso e empurre a corrente
+                para cima e para baixo no meio do trajeto.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">O que observar ao comprar uma moto usada?</button>
+            <div class="faq-answer">Verifique o estado do motor, chassi, parte elétrica, pneus e documentação. Uma
+                consultoria especializada pode evitar prejuízos.</div>
+        </div>
+    </div>
+
+    <div class="question-form">
+        <h2>Não encontrou sua dúvida? Envie pelo WhatsApp:</h2>
+        <form onsubmit="enviarParaWhatsApp(event)">
+            <textarea id="duvida" placeholder="Escreva sua dúvida aqui..." required></textarea>
+            <button type="submit">Enviar via WhatsApp</button>
+        </form>
+    </div>
+    <script src="js/duvidas.js"></script>
+</body>
+</html>
