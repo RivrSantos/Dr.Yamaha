@@ -1,0 +1,22 @@
+[
+  {
+    "codigo": "DRYAMAHA10",
+    "descricao": "10% de desconto na consultoria pré-compra",
+    "desconto": 10
+  },
+  {
+    "codigo": "REVISAO20",
+    "descricao": "20% de desconto na primeira revisão",
+    "desconto": 20
+  },
+  {
+    "codigo": "CURSO50",
+    "descricao": "50% de desconto no curso avançado de mecânica Yamaha",
+    "desconto": 50
+  },
+  {
+    "codigo": "GRATISCONSULT",
+    "descricao": "Consultoria gratuita na compra de qualquer serviço acima de R$ 200",
+    "desconto": 100
+  }
+]

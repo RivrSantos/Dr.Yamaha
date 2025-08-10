@@ -1,0 +1,127 @@
+[
+  {
+    "modelo": "Yamaha Factor 125",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descricao": "Troca de óleo, filtro de óleo e inspeção geral",
+        "custo": 150
+      },
+      {
+        "km": 5000,
+        "descricao": "Troca de óleo, filtro de ar e ajuste de corrente",
+        "custo": 180
+      },
+      {
+        "km": 10000,
+        "descricao": "Troca de óleo, filtro de óleo, filtro de ar e vela",
+        "custo": 250
+      },
+      {
+        "km": 20000,
+        "descricao": "Troca de óleo, velas, fluido de freio e revisão completa",
+        "custo": 400
+      }
+    ]
+  },
+  {
+    "modelo": "Yamaha Fazer 250",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descricao": "Troca de óleo, filtro de óleo e inspeção geral",
+        "custo": 180
+      },
+      {
+        "km": 5000,
+        "descricao": "Troca de óleo, filtro de ar, ajuste de corrente",
+        "custo": 220
+      },
+      {
+        "km": 10000,
+        "descricao": "Troca de óleo, filtro de óleo, filtro de ar e vela",
+        "custo": 300
+      },
+      {
+        "km": 20000,
+        "descricao": "Troca de óleo, velas, fluido de freio e revisão geral",
+        "custo": 450
+      }
+    ]
+  },
+  {
+    "modelo": "Yamaha MT-03",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descricao": "Troca de óleo, filtro de óleo e inspeção geral",
+        "custo": 220
+      },
+      {
+        "km": 5000,
+        "descricao": "Troca de óleo, filtro de ar, ajuste de corrente",
+        "custo": 250
+      },
+      {
+        "km": 10000,
+        "descricao": "Troca de óleo, filtro de óleo, filtro de ar e velas",
+        "custo": 350
+      },
+      {
+        "km": 20000,
+        "descricao": "Troca de óleo, velas, fluido de freio e revisão completa",
+        "custo": 500
+      }
+    ]
+  },
+  {
+    "modelo": "Yamaha XTZ 250",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descricao": "Troca de óleo, filtro de óleo e inspeção geral",
+        "custo": 170
+      },
+      {
+        "km": 5000,
+        "descricao": "Troca de óleo, filtro de ar, ajuste de corrente",
+        "custo": 200
+      },
+      {
+        "km": 10000,
+        "descricao": "Troca de óleo, filtro de óleo, filtro de ar e vela",
+        "custo": 280
+      },
+      {
+        "km": 20000,
+        "descricao": "Troca de óleo, velas, fluido de freio e revisão geral",
+        "custo": 420
+      }
+    ]
+  },
+  {
+    "modelo": "Yamaha Lander 250",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descricao": "Troca de óleo, filtro de óleo e inspeção geral",
+        "custo": 180
+      },
+      {
+        "km": 5000,
+        "descricao": "Troca de óleo, filtro de ar, ajuste de corrente",
+        "custo": 210
+      },
+      {
+        "km": 10000,
+        "descricao": "Troca de óleo, filtro de óleo, filtro de ar e vela",
+        "custo": 300
+      },
+      {
+        "km": 20000,
+        "descricao": "Troca de óleo, velas, fluido de freio e revisão completa",
+        "custo": 460
+      }
+    ]
+  }
+]
