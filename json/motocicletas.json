@@ -1,0 +1,197 @@
+[
+  {
+    "modelo": "Yamaha Factor 150",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 150.0
+      },
+      {
+        "km": 5000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Verificacao e ajuste da relação",
+        "custo": 200.0
+      },
+      {
+        "km": 10000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Verificacao da relação, Verificacao dos freios",
+        "custo": 350.0
+      },
+      {
+        "km": 20000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Pastilhas de freio (se necessario), Lona de freio (se necessario), Kit de relação (se necessario)",
+        "custo": 600.0
+      }
+    ]
+  },
+  {
+    "modelo": "Yamaha Fazer FZ25",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 200.0
+      },
+      {
+        "km": 5000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Verificacao e ajuste da relação",
+        "custo": 250.0
+      },
+      {
+        "km": 10000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Verificacao da relação, Verificacao dos freios",
+        "custo": 400.0
+      },
+      {
+        "km": 20000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Pastilhas de freio (se necessario), Fluido de freio, Kit de relação (se necessario)",
+        "custo": 800.0
+      }
+    ]
+  },
+  {
+    "modelo": "Yamaha MT-03",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 250.0
+      },
+      {
+        "km": 5000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 300.0
+      },
+      {
+        "km": 10000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Fluido de freio",
+        "custo": 600.0
+      },
+      {
+        "km": 20000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Pastilhas de freio (se necessario), Kit de relação (se necessario)",
+        "custo": 1000.0
+      }
+    ]
+  },
+  {
+    "modelo": "Yamaha XTZ 1200 Super Tenere",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 400.0
+      },
+      {
+        "km": 10000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Fluido de freio, Fluido do carda",
+        "custo": 1200.0
+      },
+      {
+        "km": 20000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Pastilhas de freio (se necessario)",
+        "custo": 1800.0
+      }
+    ]
+  },
+  {
+    "modelo": "Honda CG 160 Fan",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descrição": "Troca de Oleo do motor",
+        "custo": 100.0
+      },
+      {
+        "km": 5000,
+        "descrição": "Troca de Oleo do motor, Verificacao e ajuste da relação",
+        "custo": 150.0
+      },
+      {
+        "km": 10000,
+        "descrição": "Troca de Oleo do motor, Filtro de ar, Vela de ignição, Verificacao da relação, Verificacao dos freios",
+        "custo": 300.0
+      },
+      {
+        "km": 20000,
+        "descrição": "Troca de Oleo do motor, Filtro de ar, Vela de ignição, Pastilhas de freio (se necessario), Lona de freio (se necessario), Kit de relação (se necessario)",
+        "custo": 550.0
+      }
+    ]
+  },
+  {
+    "modelo": "Honda CB 300F Twister",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 220.0
+      },
+      {
+        "km": 5000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 270.0
+      },
+      {
+        "km": 10000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Verificacao da relação, Verificacao dos freios",
+        "custo": 450.0
+      },
+      {
+        "km": 20000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Pastilhas de freio (se necessario), Fluido de freio, Kit de relação (se necessario)",
+        "custo": 900.0
+      }
+    ]
+  },
+  {
+    "modelo": "Honda CB 500X",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 300.0
+      },
+      {
+        "km": 6000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 350.0
+      },
+      {
+        "km": 12000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Fluido de freio",
+        "custo": 700.0
+      },
+      {
+        "km": 24000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Pastilhas de freio (se necessario), Kit de relação (se necessario)",
+        "custo": 1200.0
+      }
+    ]
+  },
+  {
+    "modelo": "Honda CB 1000R",
+    "revisoes": [
+      {
+        "km": 1000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 500.0
+      },
+      {
+        "km": 6000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo",
+        "custo": 600.0
+      },
+      {
+        "km": 12000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Fluido de freio",
+        "custo": 1500.0
+      },
+      {
+        "km": 24000,
+        "descrição": "Troca de Oleo do motor, Filtro de oleo, Filtro de ar, Vela de ignição, Pastilhas de freio (se necessario)",
+        "custo": 2500.0
+      }
+    ]
+  }
+]
