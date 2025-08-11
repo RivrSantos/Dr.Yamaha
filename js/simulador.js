@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let modelosData = [];
 
     // Carregar modelos do JSON
-    fetch("../json/motocicletas.json")
+    fetch("../json/modelos.json")
         .then(res => res.json())
         .then(data => {
             modelosData = data;
