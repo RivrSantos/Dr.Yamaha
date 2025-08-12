@@ -588,3 +588,34 @@ body {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+
+.apoio {
+    max-width: 600px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    background-color: #1e293b;
+    border-radius: 10px;
+    text-align: center;
+    color: #cbd5e1;
+    }
+
+.apoio h2 {
+    color: #22d3ee;
+    margin-bottom: 0.5rem;
+    }
+
+.apoio button {
+    margin-top: 1rem;
+    background-color: #22d3ee;
+    color: #0f172a;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+.apoio button:hover {
+    background-color: #06b6d4;
+    }
