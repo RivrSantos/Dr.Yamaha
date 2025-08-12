@@ -61,3 +61,15 @@ if (menuToggle && mobileNavLinks) {
     });
 }
 });
+
+// funçao para doar
+function copiarPix() {
+  const chave = document.getElementById("chavePix").textContent;
+  navigator.clipboard.writeText(chave).then(() => {
+    document.getElementById("copiado").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("copiado").style.display = "none";
+    }, 3000);
+  });
+}
+
