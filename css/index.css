@@ -241,7 +241,7 @@ body {
   background-color: var(--card-bg);
   padding: 2rem;
   border-radius: 16px;
-  border: 1px solid var(--border-color);
+  border: 1px solid #00ffff;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -595,12 +595,13 @@ body {
     padding: 2rem;
     background-color: #1e293b;
     border-radius: 10px;
+    border: 1px solid #00ffff;
     text-align: center;
     color: #cbd5e1;
     }
 
 .apoio h2 {
-    color: #22d3ee;
+    color: #ffffff;
     margin-bottom: 0.5rem;
     }
 
@@ -619,3 +620,4 @@ body {
 .apoio button:hover {
     background-color: #06b6d4;
     }
+
