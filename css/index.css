@@ -241,7 +241,7 @@ body {
   background-color: var(--card-bg);
   padding: 2rem;
   border-radius: 16px;
-  border: 1px solid #00ffff;
+  border: 1px solid var(--border-color);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -620,4 +620,5 @@ body {
 .apoio button:hover {
     background-color: #06b6d4;
     }
+
 
