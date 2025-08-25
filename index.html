@@ -206,6 +206,57 @@
                 <p>Fabiano Athaide</p>
             </div>
         </section>
+        <section id="video-section" class="container">
+            <h3 class="section-title">Conheça nosso Trabalho em Vídeo</h3>
+            <div class="video-responsive">
+                <iframe id="youtube-video" width="560" height="315"
+                    src="https://www.youtube.com/embed/KY_BxiQsipk?si=bOq__5xU__cPknGT" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            /**
+             *API do YouTube
+             */
+            function onYouTubeIframeAPIReady() {
+                // 'youtube-video' é o ID do seu iframe
+                const player = new YT.Player('youtube-video', {
+                    events: {
+                        // Assim que o player estiver pronto, configura o Intersection Observer
+                        'onReady': (event) => {
+                            setupIntersectionObserver(event.target);
+                        }
+                    }
+                });
+            }
+
+            function setupIntersectionObserver(player) {
+                const videoElement = player.getIframe();
+
+                const observerOptions = {
+                    root: null, // Observa em relação à janela de visualização (viewport)
+                    rootMargin: '0px',
+                    // O callback será acionado quando 80% do vídeo estiver visível
+                    threshold: 0.8
+                };
+                const observerCallback = (entries) => {
+                    entries.forEach(entry => {
+                        // Se o vídeo está visível, toca. Senão, pausa.
+                        if (entry.isIntersecting) {
+                            player.playVideo();
+                        } else {
+                            player.pauseVideo();
+                        }
+                    });
+                };
+                const observer = new IntersectionObserver(observerCallback, observerOptions);
+                // Começa a observar o elemento do iframe
+                observer.observe(videoElement);
+            }
+        </script>
         <div class="apoio">
             <h2>Apoie nosso trabalho</h2>
             <p>Se nosso conteúdo está ajudando você, considere apoiar com uma contribuição via PIX.</p>
@@ -257,6 +308,7 @@
 </body>
 </html>
     
+
 
 
 
