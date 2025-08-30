@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #0f172a;
+  --bg-color: #000000;
   /* slate-900 */
   --card-bg: #1e293b;
   /* slate-800 */
@@ -620,5 +620,6 @@ body {
 .apoio button:hover {
     background-color: #06b6d4;
     }
+
 
 
