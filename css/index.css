@@ -595,7 +595,6 @@ body {
     padding: 2rem;
     background-color: #1e293b;
     border-radius: 10px;
-    border: 1px solid #00ffff;
     text-align: center;
     color: #cbd5e1;
     }
@@ -620,6 +619,7 @@ body {
 .apoio button:hover {
     background-color: #06b6d4;
     }
+
 
 
 
