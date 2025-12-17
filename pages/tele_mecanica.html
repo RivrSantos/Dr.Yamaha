@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tele Mecânica Dr. Yamaha - Dúvida Rápida</title>
+    <style>
+        /* Estilos baseados no index.css */
+        :root {
+            --bg-color: black;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-color: #22d3ee;
+            --green-color: #22c55e;
+            --error-color: #ef4444;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: "Inter", sans-serif;
+            line-height: 1.6;
+
+            /* Imagem de Fundo Profissional */
+            background-image: url('[URL_DA_SUA_IMAGEM_PROFISSIONAL_MECANICO.jpg]');
+            /* Substitua pela URL da sua imagem */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            /* Adiciona uma camada escura para melhorar a legibilidade do texto */
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            /* Escurecimento */
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: var(--card-bg);
+            /* Fundo do card mais escuro */
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilos do botão e instruções PIX (adaptados ao tema escuro) */
+        .btn-duvida-rapida {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: not-allowed;
+            /* Inicia desabilitado */
+            transition: all 0.3s;
+            width: 100%;
+            opacity: 0.6;
+        }
+
+        .btn-duvida-rapida.enabled {
+            background-color: var(--accent-color);
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        .btn-duvida-rapida.enabled:hover {
+            background-color: var(--accent-hover, #06b6d4);
+        }
+
+        .pix-instrucoes {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px dashed var(--green-color);
+            border-radius: 8px;
+            background-color: #2e3b4e;
+            /* Fundo levemente diferente para PIX */
+            text-align: left;
+        }
+
+        .pix-chave {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--accent-color);
+            word-break: break-all;
+        }
+
+        .atencao {
+            color: var(--error-color);
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Seção Termos de Uso */
+        .termos-container {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-align: left;
+            background-color: #1a2434;
+        }
+
+        .termos-container h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .termos-scroll {
+            height: 120px;
+            overflow-y: scroll;
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            background-color: #1e293b;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .checkbox-termos {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .checkbox-termos input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .checkbox-termos label {
+            color: var(--text-primary);
+            font-weight: 600;
+            user-select: none;
+        }
+
+        .btn-whatsapp-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--green-color);
+            color: var(--bg-color);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-whatsapp-link:hover {
+            background-color: var(--green-hover, #16a34a);
+        }
+
+        .apoio {
+            max-width: 600px;
+            margin: 3rem auto 0;
+            padding: 2rem;
+            background-color: #1e293b;
+            border-radius: 10px;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        .apoio h2 {
+            color: #22d3ee;
+            margin-bottom: 0.5rem;
+        }
+
+        .apoio button {
+            margin-top: 1rem;
+            background-color: #22d3ee;
+            color: #0f172a;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .apoio button:hover {
+            background-color: #06b6d4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Consulta Básica (Dúvida Rápida)</h2>
+        <p>Diagnóstico inicial de 15 minutos com o Dr. Yamaha.</p>
+        <p>Valor: R$ 19,90</p>
+
+        <div class="termos-container">
+            <h3>Termos de Uso do Serviço de Tele Mecânica</h3>
+            <div class="termos-scroll">
+                <p>1. **Natureza Consultiva:** O serviço é estritamente consultivo e visa auxiliar no diagnóstico e
+                    procedimento de reparo. O Dr. Yamaha não se responsabiliza pela execução final do serviço, que é de
+                    inteira responsabilidade do executor (mecânico/proprietário).</p>
+                <p>2. **Pré-requisitos:** O cliente deve ter acesso às ferramentas básicas e seguir
+                    as orientações do Dr. Yamaha. O tempo de 15 minutos é rígido.</p>
+                <p>3. **Ausência de Garantia de Reparo:** Não há garantia de que o problema será 100% resolvido na
+                    primeira consulta, pois a complexidade de falhas elétricas pode exigir a Consulta Avançada.</p>
+                <p>4. **Pagamento Antecipado:** O serviço deve ser pago integralmente via PIX antes da confirmação do
+                    agendamento. O comprovante é obrigatório para validação.</p>
+                <p>5. **Cancelamento:** Cancelamentos ou reagendamentos devem ser solicitados com pelo menos 2 horas de
+                    antecedência. Em caso de não comparecimento (no-show), não haverá reembolso.</p>
+            </div>
+            <div class="checkbox-termos">
+                <input type="checkbox" id="aceiteTermos" onchange="habilitarBotao()">
+                <label for="aceiteTermos">Li e Concordo com os termos de uso acima.</label>
+            </div>
+        </div>
+
+        <button id="btnDuvidaRapida" class="btn-duvida-rapida" onclick="exibirPix()">
+            Aceite os Termos para Pagar (R$ 19,90)
+        </button>
+
+        <div id="pixInstrucoes" class="pix-instrucoes">
+            <h3>1. Efetue o Pagamento via PIX</h3>
+            <p>Valor: R$ 19,90. Utilize o aplicativo do seu banco:</p>
+
+            <div class="apoio">
+                <p><strong>Chave PIX:</strong> <span id="chavePix">rivaldoyamaha.rf@gmail.com</span></p>
+                <button onclick="copiarPix()">Copiar Chave PIX</button>
+                <p id="copiado" style="color: #22c55e; display: none; margin-top: 0.5rem;">✅ Chave copiada!</p>
+            </div>
+
+            <p class="atencao">
+                ⚠️ **ATENÇÃO:** Envie o comprovante de pagamento para o nosso WhatsApp imediatamente para
+                garantir seu horário.
+            </p>
+
+            <h3>2. Envie o comprovante e aguarde</h3>
+            <p>Clique abaixo para enviar o comprovante e iniciar o agendamento da sua consulta de 15 minutos:</p>
+
+            <a href="https://wa.me/38988340443?text=Ol%C3%A1%2C%20acabei%20de%20fazer%20o%20PIX%20de%20R%24%2019%2C90%20e%20quero%20agendar%20minha%20D%C3%BAvida%20R%C3%A1pida%20com%20o%20Dr.%20Yamaha."
+                target="_blank" class="btn-whatsapp-link">
+                Enviar Comprovante
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function habilitarBotao() {
+            var checkbox = document.getElementById("aceiteTermos");
+            var botao = document.getElementById("btnDuvidaRapida");
+
+            if (checkbox.checked) {
+                botao.classList.add("enabled");
+                botao.textContent = "INICIAR PAGAMENTO PIX";
+                botao.setAttribute("title", "Clique para ver as instruções de pagamento.");
+                botao.style.cursor = "pointer";
+            } else {
+                botao.classList.remove("enabled");
+                botao.textContent = "Aceite os Termos para iniciar pagamento";
+                botao.setAttribute("title", "Você precisa aceitar os termos de uso.");
+                botao.style.cursor = "not-allowed";
+            }
+        }
+
+        function exibirPix() {
+            var instrucoes = document.getElementById("pixInstrucoes");
+            var botao = document.getElementById("btnDuvidaRapida");
+
+            // Verifica se o botão está habilitado (termos aceitos)
+            if (!botao.classList.contains("enabled")) {
+                alert("Por favor, leia e aceite os Termos de Uso para prosseguir com o pagamento.");
+                return;
+            }
+
+            // Alterna a visualização das instruções PIX
+            if (instrucoes.style.display === "none" || instrucoes.style.display === "") {
+                instrucoes.style.display = "block";
+                botao.textContent = "Ocultar instruções";
+                botao.style.backgroundColor = "#ffc107"; // Cor de aviso
+                botao.style.color = "#333";
+            } else {
+                instrucoes.style.display = "none";
+                botao.textContent = "INICIAR PAGAMENTO PIX";
+                botao.style.backgroundColor = "var(--accent-color)";
+                botao.style.color = "var(--bg-color)";
+            }
+        }
+
+        function copiarPix() {
+            const chave = document.getElementById("chavePix").textContent;
+            navigator.clipboard.writeText(chave).then(() => {
+                document.getElementById("copiado").style.display = "block";
+                setTimeout(() => {
+                    document.getElementById("copiado").style.display = "none";
+                }, 3000);
+            });
+        }
+
+        // Inicializa o estado do botão ao carregar a página
+        window.onload = habilitarBotao;
+    </script>
+
+</body>
+
+</html>
