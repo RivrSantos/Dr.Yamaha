@@ -619,6 +619,42 @@ body {
 .apoio button:hover {
     background-color: #06b6d4;
     }
+.bg-responsivo {
+  /* Caminho da imagem */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/dayv.jpg");
+
+  /* Faz a imagem cobrir todo o espaço sem distorcer */
+  background-size: cover;
+
+  /* Mantém o foco da imagem no centro */
+  background-position: center center;
+
+  /* Impede que a imagem se repita */
+  background-repeat: no-repeat;
+
+  /* Efeito "Parallax" (opcional): a imagem fica fixa enquanto o conteúdo rola */
+  background-attachment: fixed;
+
+  /* Garante que o bloco tenha pelo menos a altura da tela do usuário */
+  min-height: 100vh;
+
+  /* Flexbox para centralizar o conteúdo dentro do background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Ajuste para dispositivos móveis (opcional) */
+@media (max-width: 768px) {
+  .bg-responsivo {
+    /* Desativa o efeito fixo em celulares para melhor performance */
+    background-attachment: scroll;
+    padding: 20px;
+  }
+}
 
 
 
