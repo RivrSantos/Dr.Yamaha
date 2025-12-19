@@ -1,9 +1,9 @@
 :root {
-  --bg-color: black;
+  --bg-color: #0d1117;
   /* slate-900 */
-  --card-bg: #1e293b;
+  --card-bg: #161b22;
   /* slate-800 */
-  --border-color: #334155;
+  --border-color: #30363d;
   /* slate-700 */
   --text-primary: #f1f5f9;
   /* slate-100 */
@@ -252,7 +252,7 @@ body {
 }
 
 .card-icon {
-  color: var(--accent-color);
+  color: rgb(250, 223, 67);
   margin-bottom: 1rem;
 }
 
@@ -280,7 +280,7 @@ body {
 .testimonial-card .profile-image {
   width: 120px;
   height: 120px;
-  border: 0px solid var(--accent-color);
+  border: 2px solid rgb(250, 223, 67);
   flex-shrink: 0;
   /* Reseta a sombra herdada da classe .profile-image genérica */
   box-shadow: none;
@@ -343,7 +343,7 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 16px;
-  border: 2px solid var(--border-color);
+  border: 2px solid rgb(250, 223, 67);
   object-fit: cover;
 }
 
@@ -655,6 +655,7 @@ body {
     padding: 20px;
   }
 }
+
 
 
 
